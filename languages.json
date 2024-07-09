@@ -1,26 +1,26 @@
 [
     {
-        "skill": "Java",
+        "language": "Java",
         "startDate":  "2018-05-21",
         "level": "Expert"
     },
     {
-        "skill": "C#",
+        "language": "C#",
         "startDate": "2018-12-13",
         "level": "Expert"
     },
     {
-        "skill": "JS",
+        "language": "JS",
         "startDate": "2019-07-21",
         "level": "Novice"
     },
     {
-        "skill": "C++",
+        "language": "C++",
         "startDate": "2019-08-08",
         "level": "Novice"
     },
     {
-        "skill": "Python",
+        "language": "Python",
         "startDate": "2023-04-14",
         "level": "Novice"
     }
