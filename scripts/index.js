@@ -21,8 +21,11 @@ $(document).ready(function() {
         const skillsGrid = $('#skills-grid');
         $.each(data, function(index, skill) {
             const skillDiv = $('<div>').addClass('skill').text(skill.skill);
+            skillsGrid.append(skillDiv);
             const experienceDiv = $('<div>').addClass('experience').text(`${calculateExperience(skill.startDate)} years`);
-            skillsGrid.append(skillDiv, experienceDiv);
+            skillDiv.append(experienceDiv);
+            const skillLevelDiv = $('<div>').addClass('skill-level').text(`Skill Level: ${skill.level}`);
+            skillDiv.append(skillLevelDiv);
         });
     });
 });
