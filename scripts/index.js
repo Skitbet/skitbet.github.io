@@ -9,6 +9,18 @@ function calculateAgeWithDecimal(date) {
     return ageInYears.toFixed(10);
 }
 
+$(document).ready(function() {
+    $.getJSON('skills.json', function(data) {
+        const skillsGrid = $('#skills-grid');
+        $.each(data, function(index, skill) {
+            const skillDiv = $('<div>').addClass('skill').text(skill.skill);
+            const experienceDiv = $('<div>').addClass('experience').text(skill.experience);
+            skillsGrid.append(skillDiv, experienceDiv);
+        });
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("age").innerText = `Im currently ${calculateAgeWithDecimal("2006-05-13")} years old!`;
 });
