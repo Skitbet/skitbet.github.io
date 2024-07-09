@@ -9,16 +9,16 @@ function calculateAgeWithDecimal(date) {
     return ageInYears.toFixed(10);
 }
 
-function calculateExperience(startDate) {
+function calculateExperience(startDate, fixed) {
     const today = new Date();
     const start = new Date(startDate);
     const diff = today - start;
     const years = diff / (1000 * 60 * 60 * 24 * 365);
-    return years.toFixed(1);
+    return (fixed ? years.toFixed(1) : Math.floor(years));
 }
 
-function getSkills(type) {
-    $.getJSON(`https://raw.githubusercontent.com/Skitbet/skitbet.github.io/main/${type + "s"}.json`, function(data) {
+function getSkills(type, fixedTime) {
+    $.getJSON(`https://raw.githubusercontent.com/Skitbet/skitbet.github.io/main/${type}.json`, function(data) {
         const skillsGrid = $(`#${type}-skills-grid`);
         $.each(data, function(index, skill) {
             const skillDiv = $('<div>')
@@ -27,7 +27,7 @@ function getSkills(type) {
                 .text(skill.name);
             skillsGrid.append(skillDiv);
 
-            const experienceDiv = $('<div>').addClass('experience').text(`${calculateExperience(skill.startDate)} years`);
+            const experienceDiv = $('<div>').addClass('experience').text(`${calculateExperience(skill.startDate, fixedTime)} years`);
             skillDiv.append(experienceDiv);
 
             const skillLevelDiv = $('<div>').addClass('skill-level').text(`Skill Level: ${skill.level}`);
@@ -37,8 +37,8 @@ function getSkills(type) {
 }
 
 $(document).ready(function() {
-    getSkills("language");
-    getSkills("api");
+    getSkills("language", true);
+    getSkills("api", false);
 });
 
 function growDiv(element) {
