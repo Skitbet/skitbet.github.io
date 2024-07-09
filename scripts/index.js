@@ -10,7 +10,7 @@ function calculateAgeWithDecimal(date) {
 }
 
 $(document).ready(function() {
-    $.getJSON('skills.json', function(data) {
+    $.getJSON('https://raw.githubusercontent.com/Skitbet/skitbet.github.io/main/skills.json', function(data) {
         const skillsGrid = $('#skills-grid');
         $.each(data, function(index, skill) {
             const skillDiv = $('<div>').addClass('skill').text(skill.skill);
