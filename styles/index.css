@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .line {
@@ -50,7 +51,7 @@ body {
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 
 .skill {
@@ -75,4 +76,14 @@ body {
     text-align: center;
     font-size: 15px;
     font-weight: normal;
+}
+
+
+.grow-on-hover {
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.grow-on-hover:hover {
+    transform: scale(1.1);
 }
