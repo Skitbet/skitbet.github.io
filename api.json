@@ -1,26 +1,26 @@
 [
     {
-        "name": "Lombok",
+        "type": "Lombok",
         "startDate":  "2019-01-01",
         "level": "Expert"
     },
     {
-        "name": "JDA",
+        "type": "JDA",
         "startDate": "2019-01-01",
         "level": "Expert"
     },
     {
-        "name": "DiscordJS",
+        "type": "DiscordJS",
         "startDate": "2020-01-01",
         "level": "Novice"
     },
     {
-        "name": "JQuery",
+        "type": "JQuery",
         "startDate": "2024-07-09",
         "level": "Novice"
     },
     {
-        "name": "Unity",
+        "type": "Unity",
         "startDate": "2019-01-01",
         "level": "Expert"
     }

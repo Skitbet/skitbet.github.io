@@ -24,7 +24,7 @@ function getSkills(type, fixedTime) {
             const skillDiv = $('<div>')
                 .addClass('skill')
                 .addClass("grow-on-hover")
-                .text(skill.name);
+                .text(skill.type);
             skillsGrid.append(skillDiv);
 
             const experienceDiv = $('<div>').addClass('experience').text(`${calculateExperience(skill.startDate, fixedTime)} years`);
