@@ -1,26 +1,26 @@
 [
     {
-        "language": "Lombok",
+        "name": "Lombok",
         "startDate":  "2019-01-01",
         "level": "Expert"
     },
     {
-        "language": "JDA",
+        "name": "JDA",
         "startDate": "2019-01-01",
         "level": "Expert"
     },
     {
-        "language": "DiscordJS",
+        "name": "DiscordJS",
         "startDate": "2020-01-01",
         "level": "Novice"
     },
     {
-        "language": "JQuery",
+        "name": "JQuery",
         "startDate": "2024-07-09",
         "level": "Novice"
     },
     {
-        "language": "Unity",
+        "name": "Unity",
         "startDate": "2019-01-01",
         "level": "Expert"
     }

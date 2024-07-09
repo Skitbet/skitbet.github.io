@@ -1,26 +1,26 @@
 [
     {
-        "language": "Java",
+        "name": "Java",
         "startDate":  "2018-05-21",
         "level": "Expert"
     },
     {
-        "language": "C#",
+        "name": "C#",
         "startDate": "2018-12-13",
         "level": "Expert"
     },
     {
-        "language": "JS",
+        "name": "JS",
         "startDate": "2020-12-05",
         "level": "Novice"
     },
     {
-        "language": "C++",
+        "name": "C++",
         "startDate": "2021-08-08",
         "level": "Novice"
     },
     {
-        "language": "Python",
+        "name": "Python",
         "startDate": "2023-06-14",
         "level": "Novice"
     }
