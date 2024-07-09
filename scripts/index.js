@@ -27,7 +27,7 @@ $(document).ready(function() {
                 .text(skill.language);
             skillsGrid.append(skillDiv);
 
-            const experienceDiv = $('<div>').addClass('experience').text(`${calculateExperience(skill.startDate)} years`);
+            const experienceDiv = $('<div>').addClass('experience').text(`Started: {calculateExperience(skill.startDate)} years`);
             skillDiv.append(experienceDiv);
 
             const skillLevelDiv = $('<div>').addClass('skill-level').text(`Skill Level: ${skill.level}`);
