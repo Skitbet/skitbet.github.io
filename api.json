@@ -23,5 +23,15 @@
         "type": "Unity",
         "startDate": "2019-01-01",
         "level": "Expert"
+    },
+    {
+        "type": "React",
+        "startDate": "2023-01-01",
+        "level": "Novice"
+    },
+    {
+        "type": "SpigotMC/Bukkit",
+        "startDate": "2019-01-01",
+        "level": "Expert"
     }
 ]
