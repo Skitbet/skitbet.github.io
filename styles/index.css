@@ -48,7 +48,20 @@ body {
     margin-bottom: 20px;
 }
 
-.skills-grid {
+.api-header {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.language-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.api-skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;

@@ -1,0 +1,27 @@
+[
+    {
+        "language": "Lombok",
+        "startDate":  "2019-01-01",
+        "level": "Expert"
+    },
+    {
+        "language": "JDA",
+        "startDate": "2019-01-01",
+        "level": "Expert"
+    },
+    {
+        "language": "DiscordJS",
+        "startDate": "2020-01-01",
+        "level": "Novice"
+    },
+    {
+        "language": "JQuery",
+        "startDate": "2024-07-09",
+        "level": "Novice"
+    },
+    {
+        "language": "Unity",
+        "startDate": "2019-01-01",
+        "level": "Expert"
+    }
+]
