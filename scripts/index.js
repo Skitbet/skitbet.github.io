@@ -28,7 +28,7 @@ function getSkills(type, fixedTime) {
             skillsGrid.append(skillDiv);
             
             const time = calculateExperience(skill.startDate, fixedTime)
-            const experienceDiv = $('<div>').addClass('experience').text(`${time} year` + (time > 1.0 || time == 0 ? "s" : ""));
+            const experienceDiv = $('<div>').addClass('experience').text(`First Used: ${time} year` + (time != 1 ? "s" : ""));
             skillDiv.append(experienceDiv);
 
             const skillLevelDiv = $('<div>').addClass('skill-level').text(`Skill Level: ${skill.level}`);
